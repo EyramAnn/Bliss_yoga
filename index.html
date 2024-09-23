@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slideshow Project</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <body>
+      <!-- Main content of the webpage -->
+    <header>
+      <!-- Header section with navigation -->
+      <nav class="navbar">
+        <!-- Navigation bar container -->
+        <div class="logo">BLISS YOGA</div>
+        <!-- Logo or site title with class 'logo' for styling -->
+        <div class="burger" onclick="toggleNav()">&#9776;</div>
+        <!-- Burger menu icon for mobile navigation, triggers 'toggleNav' function on click -->
+        <ul class="nav-links" id="navLinks">
+          <!-- Unordered list of navigation links -->
+          <li><a href="#home">Home</a></li>
+          <!-- Navigation link to the 'Home' section of the page -->
+          <li><a href="#about">About</a></li>
+          <!-- Navigation link to the 'About' section of the page -->
+          <li><a href="#contact">Contact</a></li>
+          <!-- Navigation link to the 'Contact' section of the page -->
+        </ul>
+      </nav>
+    </header>
+
+    <div class="hero-box">
+      <div class="slider">
+        <div class="overlay">
+          <img id="slider-image"
+           src="./Assets/img/yoga1.jpg" 
+           alt="Slider Image1" 
+           />
+          <img
+            id="slider-image"
+            src="./Assets/img/yoga2.jpg"
+            alt="Slider Image2"
+          />
+          <img
+            id="slider-image"
+            src="./Assets/img/yoga3.avif"
+            alt="Slider Image3"
+          />
+          <img
+            id="slider-image"
+            src="./Assets/img/yoga4.webp"
+            alt="Slider Image"
+          />
+          <img
+            id="slider-image"
+            src="./Assets/img/yoga5.webp"
+            alt="Slider Image"
+          />
+
+
+          <div class="overlay-text">
+            <h1>Welcome to our Website</h1>
+            <p>This is my slideshow project</p>
+          </div>
+        </div>
+
+        <button class="slider-btn" onclick="prevSlide()">
+          &#10094; 
+        </button>
+        <button class="slider-btn" onclick="nextSlide()"> &#10095;</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

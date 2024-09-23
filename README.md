@@ -1,0 +1,1 @@
+A tutorial task on creating Slideshows in Javascript
